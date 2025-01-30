@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Connexion</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="phone">Numéro de téléphone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Se connecter</button>
+        </form>
+        <p>Pas encore de compte ? <a href="#">S'inscrire</a></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        const phoneInput = document.querySelector("#phone");
+        const intlTelInput = window.intlTelInput(phoneInput, {
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            preferredCountries: ['fr', 'us', 'tn'], // Pays préférés (France, États-Unis, Tunisie)
+            separateDialCode: true, // Afficher le code pays séparément
+            initialCountry: "fr", // Pays par défaut
+        });
+
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const phoneNumber = intlTelInput.getNumber();
+            const password = document.getElementById("password").value;
+
+            if (intlTelInput.isValidNumber()) {
+                alert("Numéro valide : " + phoneNumber + "\nMot de passe : " + password);
+            } else {
+                alert("Numéro de téléphone invalide.");
+            }
+        });
+    </script>
+    <script src="javaS.js"></script>
+</body>
+</html>
