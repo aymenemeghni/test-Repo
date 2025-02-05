@@ -3,7 +3,7 @@ let aymene = {
     p2 : 22 ,
 
     m1 : function(x,y){
-        console.log(`hey ${x} you are ${y} years old`);
+        return console.log(`hey ${x} you are ${y} years old`);
     }
 
 }
