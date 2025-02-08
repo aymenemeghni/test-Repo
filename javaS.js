@@ -24,3 +24,6 @@ let a = {
 console.log(a.m2());
 let ele = document.getElementById("phone");
 console.log(ele);
+
+let ele1 = document.getElementsByTagName("div");
+console.log(ele1);
