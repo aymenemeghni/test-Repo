@@ -11,3 +11,13 @@ let aymene = {
 console.log(aymene.m1("ahmed",22));
 console.log(aymene.p1);
 console.log(aymene.p2);
+
+let a = {
+    p : 23,
+    l : "L3",
+    q : "fuckin usthb",
+    m2: function(){
+        return `i am ${l} student in ${q} `
+    }
+
+}
