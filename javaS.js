@@ -17,7 +17,10 @@ let a = {
     l : "L3",
     q : "fuckin usthb",
     m2: function(){
-        return `i am ${l} student in ${q} `
+        return `i am ${this.l} student in ${this.q} `
     }
 
 }
+console.log(a.m2());
+let ele = document.getElementById("phone");
+console.log(ele);
