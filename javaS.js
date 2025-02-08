@@ -27,3 +27,7 @@ console.log(ele);
 
 let ele1 = document.getElementsByTagName("div");
 console.log(ele1);
+console.log(ele1[1]);
+console.log(ele1[2]);
+console.log(ele1[3]);
+console.log(ele1[4]);
