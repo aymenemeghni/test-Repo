@@ -32,4 +32,7 @@ console.log(ele1[2]);
 console.log(ele1[3]);
 console.log(ele1[4]);
 let y = 4;
-let x ;
+let x = document.getElementsByTagName("label")[0];
+console.log(x);
+console.log(x.getAttribute("for"));
+console.log(x.getAttribute("for"));
