@@ -31,3 +31,4 @@ console.log(ele1[1]);
 console.log(ele1[2]);
 console.log(ele1[3]);
 console.log(ele1[4]);
+let y = 4;
