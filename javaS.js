@@ -56,3 +56,8 @@ q.appendChild(t);
 console.log(q);
 let b = document.createComment("this is my first experience in JS ");
 console.log(b);
+let c = document.getElementsByTagName("button")[0];
+console.log(c);
+c.onclick = function(){
+    console.log("js test");
+};
