@@ -36,3 +36,6 @@ let x = document.getElementsByTagName("label")[0];
 console.log(x);
 console.log(x.getAttribute("for"));
 console.log(x.getAttribute("for"));
+console.log(x.hasAttribute("id"));
+console.log(x.hasAttribute("for"));
+console.log(x.hasAttributes());
