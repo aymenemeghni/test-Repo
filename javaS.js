@@ -48,3 +48,11 @@ console.log(s);
 console.log(r);
 r.setAttribute("src", "aaaaaaaaaaa");
 console.log(r);
+
+let q = document.createElement("div");
+let t = document.createTextNode("real madrid is  the best club in the world");
+console.log(t);
+q.appendChild(t);
+console.log(q);
+let b = document.createComment("this is my first experience in JS ");
+console.log(b);
