@@ -64,3 +64,7 @@ c.onclick = function(){
 document.oncontextmenu = function(){
     console.log("menue");
 };
+console.log("*********************************");
+document.onmouseenter =  function(){
+    console.log("entre");
+};
