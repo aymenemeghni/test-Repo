@@ -39,3 +39,10 @@ console.log(x.getAttribute("for"));
 console.log(x.hasAttribute("id"));
 console.log(x.hasAttribute("for"));
 console.log(x.hasAttributes());
+
+let r = document.createElement("div");
+console.log(r);
+let s = document.createAttribute("src");
+r.setAttributeNode(s);
+console.log(s);
+console.log(r);
