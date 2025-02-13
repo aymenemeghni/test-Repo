@@ -61,3 +61,6 @@ console.log(c);
 c.onclick = function(){
     console.log("js test");
 };
+document.oncontextmenu = function(){
+    console.log("menue");
+};
