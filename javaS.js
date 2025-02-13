@@ -65,6 +65,10 @@ document.oncontextmenu = function(){
     console.log("menue");
 };
 console.log("*********************************");
+
 document.onmouseenter =  function(){
     console.log("entre");
+};
+document.onmouseleave =  function(){
+    console.log("leave");
 };
