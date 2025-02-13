@@ -46,3 +46,5 @@ let s = document.createAttribute("src");
 r.setAttributeNode(s);
 console.log(s);
 console.log(r);
+r.setAttribute("src", "aaaaaaaaaaa");
+console.log(r);
