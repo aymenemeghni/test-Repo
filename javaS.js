@@ -72,3 +72,14 @@ document.onmouseenter =  function(){
 document.onmouseleave =  function(){
     console.log("leave");
 };
+
+let v = document.getElementsByTagName("div")[0];
+console.log(v);
+console.log(v.classList);
+console.log(v.classList.length);
+console.log(v.classList.contains("aymene"));
+console.log(v.classList.item("0"));
+v.classList.add("class1","class2");
+console.log(v);
+v.classList.toggle("class3");
+console.log(v);
