@@ -83,3 +83,11 @@ v.classList.add("class1","class2");
 console.log(v);
 v.classList.toggle("class3");
 console.log(v);
+
+console.log("*************************");
+let h = document.getElementsByTagName("h2")[0];
+console.log(h);
+console.log(h.nextSibling);
+console.log(h.nextElementSibling);
+console.log(h.previousSibling);
+console.log(h.previousElementSibling);
