@@ -110,3 +110,11 @@ let set = setTimeout(function(a){console.log(`hello ${a}`);},4000,"aymen meghni"
 c.onclick = function(){
 clearTimeout(set);
 };
+
+console.log(location.href);
+console.log(location.host);
+console.log(location.hostname);
+console.log(location.protocol);
+console.log(location.hash);
+// location.assign("google.com");
+// location.replace("google.com");
