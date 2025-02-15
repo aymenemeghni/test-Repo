@@ -12,6 +12,9 @@ console.log(aymene.m1("ahmed",22));
 console.log(aymene.p1);
 console.log(aymene.p2);
 
+// DOM
+
+
 let a = {
     p : 23,
     l : "L3",
@@ -21,6 +24,7 @@ let a = {
     }
 
 }
+
 console.log(a.m2());
 let ele = document.getElementById("phone");
 console.log(ele);
@@ -95,3 +99,4 @@ console.log(h.previousElementSibling);
 let hh = h.cloneNode(true);
 console.log(hh);
 
+// BOM
