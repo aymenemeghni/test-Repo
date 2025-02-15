@@ -105,3 +105,8 @@ let confirmlet = window.confirm("are you sure ? ");
 console.log(confirmlet);
 let promp = prompt("give me your name","mohamed") ;
 console.log(promp);
+
+let set = setTimeout(function(a){console.log(`hello ${a}`);},4000,"aymen meghni");
+c.onclick = function(){
+clearTimeout(set);
+};
