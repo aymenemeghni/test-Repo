@@ -100,3 +100,8 @@ let hh = h.cloneNode(true);
 console.log(hh);
 
 // BOM
+window.alert("hola");
+let confirmlet = window.confirm("are you sure ? ");
+console.log(confirmlet);
+let promp = prompt("give me your name","mohamed") ;
+console.log(promp);
