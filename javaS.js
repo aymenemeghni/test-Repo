@@ -91,3 +91,7 @@ console.log(h.nextSibling);
 console.log(h.nextElementSibling);
 console.log(h.previousSibling);
 console.log(h.previousElementSibling);
+
+let hh = h.cloneNode(true);
+console.log(hh);
+
