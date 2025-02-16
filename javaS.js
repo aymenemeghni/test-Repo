@@ -125,3 +125,9 @@ console.log(history.length);
 // history.go(0);
 console.log(history);
 console.log(history);
+let ide = document.getElementsByTagName("div")[3];
+console.log(ide);
+c.onclick = function(){
+    console.log(ide);
+    
+}
