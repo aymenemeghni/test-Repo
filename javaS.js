@@ -137,5 +137,9 @@ c.onclick = function(){
         console.log("other country");
         
     }
+
+    let sss = phone;
+    
+    console.log(sss);
     
 };
