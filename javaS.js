@@ -129,5 +129,13 @@ let ide = document.getElementsByTagName("div")[3];
 console.log(ide);
 c.onclick = function(){
     console.log(ide);
+    if (ide === +213) {
+        console.log("algeria");
+        
+    } else {
     
-}
+        console.log("other country");
+        
+    }
+    
+};
