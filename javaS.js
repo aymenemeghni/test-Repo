@@ -138,8 +138,5 @@ c.onclick = function(){
         
     }
 
-    let sss = phone;
-    
-    console.log(sss);
-    
+
 };
