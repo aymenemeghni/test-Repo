@@ -147,3 +147,13 @@ console.log("aymene");
 console.log("***************************************************************");
 console.log("***************************************************************");
 console.log("***************************************************************");
+c.onclick = function () {
+  // window.print();
+  window.scrollTo(400, 400);
+};
+window.scrollTo(400, 400);
+window.scrollTo({
+  left: 2000,
+  top: 1000,
+  behavior: "smooth",
+});
