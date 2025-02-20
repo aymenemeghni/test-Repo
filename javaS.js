@@ -157,3 +157,12 @@ window.scrollTo({
   top: 1000,
   behavior: "smooth",
 });
+
+
+
+window.localStorage.setItem("color","black");
+// c.style.backgroundColor = window.localStorage.getItem("color");
+// c.onclick = function(){
+//  c.style.backgroundColor = window.localStorage.getItem("color");
+// };
+
