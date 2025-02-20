@@ -173,3 +173,5 @@ console.log(xy);
 console.log(yy);
 console.log(z);
 console.log(nameP);
+
+[xy,z]=[z,xy];
