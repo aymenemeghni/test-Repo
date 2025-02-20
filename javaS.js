@@ -166,3 +166,10 @@ window.localStorage.setItem("color","black");
 //  c.style.backgroundColor = window.localStorage.getItem("color");
 // };
 
+
+let nameP = ["aymene","mohamed", "meghni"];
+let [xy , yy , z] = nameP;
+console.log(xy);
+console.log(yy);
+console.log(z);
+console.log(nameP);
