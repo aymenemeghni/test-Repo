@@ -1,29 +1,26 @@
 let aymene = {
-    p1 : "aymene chikour ",
-    p2 : 22 ,
+  p1: "aymene chikour ",
+  p2: 22,
 
-    m1 : function(x,y){
-        return console.log(`hey ${x} you are ${y} years old`);
-    }
+  m1: function (x, y) {
+    return console.log(`hey ${x} you are ${y} years old`);
+  },
+};
 
-}
-
-console.log(aymene.m1("ahmed",22));
+console.log(aymene.m1("ahmed", 22));
 console.log(aymene.p1);
 console.log(aymene.p2);
 
 // DOM
 
-
 let a = {
-    p : 23,
-    l : "L3",
-    q : "fuckin usthb",
-    m2: function(){
-        return `i am ${this.l} student in ${this.q} `
-    }
-
-}
+  p: 23,
+  l: "L3",
+  q: "fuckin usthb",
+  m2: function () {
+    return `i am ${this.l} student in ${this.q} `;
+  },
+};
 
 console.log(a.m2());
 let ele = document.getElementById("phone");
@@ -62,19 +59,19 @@ let b = document.createComment("this is my first experience in JS ");
 console.log(b);
 let c = document.getElementsByTagName("button")[0];
 console.log(c);
-c.onclick = function(){
-    console.log("js test");
+c.onclick = function () {
+  console.log("js test");
 };
-document.oncontextmenu = function(){
-    console.log("menue");
+document.oncontextmenu = function () {
+  console.log("menue");
 };
 console.log("*********************************");
 
-document.onmouseenter =  function(){
-    console.log("entre");
+document.onmouseenter = function () {
+  console.log("entre");
 };
-document.onmouseleave =  function(){
-    console.log("leave");
+document.onmouseleave = function () {
+  console.log("leave");
 };
 
 let v = document.getElementsByTagName("div")[0];
@@ -83,7 +80,7 @@ console.log(v.classList);
 console.log(v.classList.length);
 console.log(v.classList.contains("aymene"));
 console.log(v.classList.item("0"));
-v.classList.add("class1","class2");
+v.classList.add("class1", "class2");
 console.log(v);
 v.classList.toggle("class3");
 console.log(v);
@@ -100,15 +97,21 @@ let hh = h.cloneNode(true);
 console.log(hh);
 
 // BOM
-window.alert("hola");
-let confirmlet = window.confirm("are you sure ? ");
-console.log(confirmlet);
-let promp = prompt("give me your name","mohamed") ;
-console.log(promp);
+// window.alert("hola");
+// let confirmlet = window.confirm("are you sure ? ");
+// console.log(confirmlet);
+// let promp = prompt("give me your name", "mohamed");
+// console.log(promp);
 
-let set = setTimeout(function(a){console.log(`hello ${a}`);},4000,"aymen meghni");
-c.onclick = function(){
-clearTimeout(set);
+let set = setTimeout(
+  function (a) {
+    console.log(`hello ${a}`);
+  },
+  4000,
+  "aymen meghni"
+);
+c.onclick = function () {
+  clearTimeout(set);
 };
 
 console.log(location.href);
@@ -127,18 +130,13 @@ console.log(history);
 console.log(history);
 let ide = document.getElementsByTagName("div")[3];
 console.log(ide);
-c.onclick = function(){
-    console.log(ide);
-    if (ide === +213) {
-        console.log("algeria");
-        
-    } else {
-    
-        console.log("other country");
-        
-    }
-
-
+c.onclick = function () {
+  console.log(ide);
+  if (ide === +213) {
+    console.log("algeria");
+  } else {
+    console.log("other country");
+  }
 };
 console.log("***************************************************************");
 console.log("***************************************************************");
@@ -149,6 +147,3 @@ console.log("aymene");
 console.log("***************************************************************");
 console.log("***************************************************************");
 console.log("***************************************************************");
-
-
-
