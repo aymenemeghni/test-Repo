@@ -186,28 +186,41 @@ console.log(firstO);
 console.log(secondO);
 console.log(thirdO);
 
-let {title,age,available,skills} = firstO;
+let { title, age, available, skills } = firstO;
 
-console.log(`${title}*** ${age}*** ${available}*** ${skills[0]}*** ${skills[1]}`);
+console.log(
+  `${title}*** ${age}*** ${available}*** ${skills[0]}*** ${skills[1]}`
+);
 
 console.log("****************************************************************");
 
-let {title:tit1,age:age1,available:ava1,skills:skills1} = secondO;
+let { title: tit1, age: age1, available: ava1, skills: skills1 } = secondO;
 
 console.log(`${tit1}*** ${age1}*** ${ava1}*** ${skills1[0]}*** ${skills1[1]}`);
 
 console.log("****************************************************************");
 
-let {title:tit2,age:age2,available:ava2,skills:skills2} = thirdO;
+let { title: tit2, age: age2, available: ava2, skills: skills2 } = thirdO;
 
 console.log(`${tit2}*** ${age2}*** ${ava2}*** ${skills2[0]}*** ${skills2[1]}`);
 
-
-
-
-let mapuser = new Map ();
-mapuser.set("aymene",function(){console.log("aymeneeee")});
+let mapuser = new Map();
+mapuser.set("aymene", function () {
+  console.log("aymeneeee");
+});
 console.log(mapuser.get("aymene"));
 console.log(mapuser.has("x"));
 console.log(mapuser.has("aymene"));
 console.log(mapuser);
+
+console.log(..."aymene");
+console.log([..."aymene"]);
+
+let arraynum =[1,2,3,4];
+let arraynumm =[5,6,7,8];
+let concatinatearray = [...arraynum,...arraynumm];
+console.log(concatinatearray);
+let copy1 = arraynum;
+let copy2 = [...arraynum];
+console.log(copy1);
+console.log(copy2);
