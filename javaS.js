@@ -158,20 +158,49 @@ window.scrollTo({
   behavior: "smooth",
 });
 
-
-
-window.localStorage.setItem("color","black");
+window.localStorage.setItem("color", "black");
 // c.style.backgroundColor = window.localStorage.getItem("color");
 // c.onclick = function(){
 //  c.style.backgroundColor = window.localStorage.getItem("color");
 // };
 
-
-let nameP = ["aymene","mohamed", "meghni"];
-let [xy , yy , z] = nameP;
+let nameP = ["aymene", "mohamed", "meghni"];
+let [xy, yy, z] = nameP;
 console.log(xy);
 console.log(yy);
 console.log(z);
 console.log(nameP);
 
-[xy,z]=[z,xy];
+[xy, z] = [z, xy];
+
+let myFriends = [
+  { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+  { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+  { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+];
+
+let firstO = myFriends[0];
+let secondO = myFriends[1];
+let thirdO = myFriends[2];
+console.log(firstO);
+console.log(secondO);
+console.log(thirdO);
+
+let {title,age,available,skills} = firstO;
+
+console.log(`${title}*** ${age}*** ${available}*** ${skills[0]}*** ${skills[1]}`);
+
+console.log("****************************************************************");
+
+let {title:tit1,age:age1,available:ava1,skills:skills1} = secondO;
+
+console.log(`${tit1}*** ${age1}*** ${ava1}*** ${skills1[0]}*** ${skills1[1]}`);
+
+console.log("****************************************************************");
+
+let {title:tit2,age:age2,available:ava2,skills:skills2} = thirdO;
+
+console.log(`${tit2}*** ${age2}*** ${ava2}*** ${skills2[0]}*** ${skills2[1]}`);
+
+
+
