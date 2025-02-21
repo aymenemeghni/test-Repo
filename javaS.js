@@ -204,3 +204,10 @@ console.log(`${tit2}*** ${age2}*** ${ava2}*** ${skills2[0]}*** ${skills2[1]}`);
 
 
 
+
+let mapuser = new Map ();
+mapuser.set("aymene",function(){console.log("aymeneeee")});
+console.log(mapuser.get("aymene"));
+console.log(mapuser.has("x"));
+console.log(mapuser.has("aymene"));
+console.log(mapuser);
