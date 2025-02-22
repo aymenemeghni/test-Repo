@@ -224,3 +224,31 @@ let copy1 = arraynum;
 let copy2 = [...arraynum];
 console.log(copy1);
 console.log(copy2);
+
+// *****regular exp********
+
+let testname = "Aymene meghni love real madrid";
+let regexp = /Aymen/g ;
+let resulttest = testname.match(regexp);
+console.log(resulttest);
+
+// verification email
+let emails = "meghnimohamedaymene@gmail.com  @gmail.com  aa@gmail.com"
+let expregforemail = /\w+@gmail.com/g;
+let emailvalid = emails.match(expregforemail);
+console.log(emailvalid);
+
+//chalenge el zeroooo
+let url1 = 'elzero.org';
+let url2 = 'http://elzero.org';
+let url3 = 'https://elzero.org';
+let url4 = 'https://www.elzero.org';
+let url5 = 'https://www.elzero.org:8080/articles.php?id=100&cat=topics';
+
+let re = /((http:\/\/)?|(https:\/\/)?)?(w{3})?(\.)*\w+\.org.*/ig;
+
+console.log(url1.match(re));
+console.log(url2.match(re));
+console.log(url3.match(re));
+console.log(url4.match(re));
+console.log(url5.match(re));
