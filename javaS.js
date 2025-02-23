@@ -261,8 +261,23 @@ class userPlat {
   }
 }
 
-let user1 = new userPlat("aymene","20YO","meghnimohamedaymene@gmail.com");
+let user1 = new userPlat("aymene", "20YO", "meghnimohamedaymene@gmail.com");
 
 console.log(user1);
 
 console.log(user1 instanceof userPlat);
+
+class userspecial extends userPlat {
+  constructor(username, userage, useremail, tarif) {
+    super(username, userage, useremail);
+    this.tarif = tarif;
+  }
+}
+
+let chikourAymene = new userspecial("aymene","20Yo","xxxxxxxxxxx",100000);
+
+console.log(chikourAymene);
+
+console.log(chikourAymene instanceof userPlat);
+
+console.log(chikourAymene instanceof userspecial);
