@@ -304,3 +304,14 @@ let chikourAymene2 = new master(
 
 console.log(chikourAymene2);
 console.log(chikourAymene2.settarif());
+
+let ahmedd = {};
+
+Object.defineProperty(ahmedd,"anaaaaa",{
+  writable : true ,
+  enumerable : true,
+  configurable : true,
+  value : 10000,
+
+});
+console.log(ahmedd);
