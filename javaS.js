@@ -274,10 +274,25 @@ class userspecial extends userPlat {
   }
 }
 
-let chikourAymene = new userspecial("aymene","20Yo","xxxxxxxxxxx",100000);
+let chikourAymene = new userspecial("aymene", "20Yo", "xxxxxxxxxxx", 100000);
 
 console.log(chikourAymene);
 
 console.log(chikourAymene instanceof userPlat);
 
 console.log(chikourAymene instanceof userspecial);
+
+class master extends userspecial {
+  constructor(username, userage, useremail, tarif, type) {
+    super(username, userage, useremail, tarif);
+    this.type = type;
+  }
+}
+
+
+let chikourAymene2 = new master("aymene", "20Yo", "xxxxxxxxxxx", 100000,"twilllll");
+
+console.log(chikourAymene2);
+
+
+
