@@ -268,10 +268,15 @@ console.log(user1);
 console.log(user1 instanceof userPlat);
 
 class userspecial extends userPlat {
+  #tarif ;
   constructor(username, userage, useremail, tarif) {
     super(username, userage, useremail);
-    this.tarif = tarif;
+    this.#tarif = tarif;
   }
+  settarif(){
+    return this.#tarif ;
+  }
+
 }
 
 let chikourAymene = new userspecial("aymene", "20Yo", "xxxxxxxxxxx", 100000);
@@ -289,10 +294,13 @@ class master extends userspecial {
   }
 }
 
-
-let chikourAymene2 = new master("aymene", "20Yo", "xxxxxxxxxxx", 100000,"twilllll");
+let chikourAymene2 = new master(
+  "aymene",
+  "20Yo",
+  "xxxxxxxxxxx",
+  100000,
+  "twilllll"
+);
 
 console.log(chikourAymene2);
-
-
-
+console.log(chikourAymene2.settarif());
