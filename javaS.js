@@ -315,3 +315,23 @@ Object.defineProperty(ahmedd,"anaaaaa",{
 
 });
 console.log(ahmedd);
+
+let w = new Date();
+
+console.log(w);
+
+let ww = new Date("2004-06-25");
+
+console.log(ww);
+
+let www = new Date(2004,5,25,11,28,11);
+
+console.log(www);
+console.log(www.getTime());
+console.log(www.getDate());
+console.log(www.getFullYear());
+console.log(www.getMonth());
+console.log(www.getDay());
+// console.log(www);
+// console.log(www);// 
+
